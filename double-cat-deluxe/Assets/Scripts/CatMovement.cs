@@ -6,8 +6,7 @@ using UnityEngine.InputSystem;
 public class CatMovement : MonoBehaviour
 {
     public InputMaster controls;
-    public int speedScale;
-    public int jumpScale;
+    public Vector2 speedScale;
     public int maxJumps = 1;
     public int jumps = 1;
     [SerializeField] Rigidbody2D rb;
@@ -25,8 +24,7 @@ public class CatMovement : MonoBehaviour
     }
 
     public void move(Vector2 dir) {
-        dir.x *= speedScale;
-        dir.y *= jumpScale;
+        dir *= speedScale;
         Vector2 vel = rb.velocity;
 
         // currently moving to the right, going to move left, and vice-versa

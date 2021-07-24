@@ -6,4 +6,5 @@ using UnityEngine;
 public class CatScriptableObject : ScriptableObject {
   public Sprite sprite;
   public Vector2 scale;
+  public Vector2 speedScale = new Vector2(200, 500);
 }

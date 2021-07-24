@@ -33,6 +33,7 @@ public class CatSetter : MonoBehaviour
     }
 
     void setMovement() {
+        catMovement.speedScale = catScriptableObject.speedScale;
         // connect each control scheme with the move function
         switch(cat.controlScheme) {
             case ControlScheme.WASD:
