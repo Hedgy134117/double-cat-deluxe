@@ -39,7 +39,6 @@ public class MultipleTargetCamera : MonoBehaviour
 
     void zoom() {
         float newZoom = Mathf.Lerp(maxZoom, minZoom, getGreatestDistance() / zoomLimiter);
-        Debug.Log(Mathf.Lerp(maxZoom, minZoom, getGreatestDistance() / zoomLimiter));
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, newZoom, Time.deltaTime);
     }
 

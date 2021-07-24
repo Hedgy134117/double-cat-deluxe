@@ -98,6 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedScale: 200
+  jumpScale: 500
+  maxJumps: 1
+  jumps: 1
   rb: {fileID: 1779807651605081407}
 --- !u!114 &7177647615251557562
 MonoBehaviour:
