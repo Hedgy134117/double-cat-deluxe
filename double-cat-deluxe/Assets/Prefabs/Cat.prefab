@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1779807651605081407}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Cat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9116f7ab6230ce47b4cc7b1f13ea0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1779807651605081407}
   speedScale: 200
+  rb: {fileID: 1779807651605081407}
 --- !u!114 &7177647615251557562
 MonoBehaviour:
   m_ObjectHideFlags: 0

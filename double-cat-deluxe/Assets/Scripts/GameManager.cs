@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         {
             GameObject catGameObject = Instantiate(catPrefab);
             catGameObject.GetComponent<CatSetter>().cat = cat;
-        }   
+        }
+        Camera.main.GetComponent<MultipleTargetCamera>().findCats();
     }
 }
