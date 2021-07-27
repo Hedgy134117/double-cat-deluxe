@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: fface538b889cd646b19646f2356c967
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gimbo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0e124f70cdb5b4e46962c2610d65a009, type: 3}
+  - {fileID: 12800000, guid: b7d30836479682d4ab56e515773cf8ed, type: 3}
+  - {fileID: 12800000, guid: ce5fb456a15bb6a4c86076b923b27f24, type: 3}
+  - {fileID: 12800000, guid: ac850148eb963474da2d56dadcabc03d, type: 3}
+  - {fileID: 12800000, guid: 9ad2ac3e195cd044e82cb35ebea655fe, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

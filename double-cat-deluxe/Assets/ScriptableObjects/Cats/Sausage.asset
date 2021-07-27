@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 05fe6ac3354d73f47b7663999c0686fe, type: 3}
   scale: {x: 1, y: 1}
+  speedScale: {x: 200, y: 500}
