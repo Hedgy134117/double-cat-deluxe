@@ -464,8 +464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catScriptableObjects:
-  - {fileID: 11400000, guid: 816b203a02743334a8addd0dcec525f9, type: 2}
-  - {fileID: 11400000, guid: 83cb3edb2817ada4388d5c2b85740494, type: 2}
+  - {fileID: 11400000, guid: 8c9725db91bd82a4b9556b45b22f1a87, type: 2}
+  - {fileID: 11400000, guid: fe5999fa51850644287c22aad657b1a6, type: 2}
   cats: []
   catGameObjects: []
   catPrefab: {fileID: 1779807651605081392, guid: 5ff7d02ff860e8442af3a59fd8805593, type: 3}
