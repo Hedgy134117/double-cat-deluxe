@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject catPrefab;
     [Header("Game")]
     [SerializeField] BoxCollider2D spawningArea;
+    [SerializeField] UIManager uiManager;
 
     void Awake() {
         for (int i = 0; i < catScriptableObjects.Count; i++) {
@@ -38,16 +39,26 @@ public class GameManager : MonoBehaviour
                 Random.Range(spawningAreaBounds.min.y, spawningAreaBounds.max.x)
             );
             cat.transform.position = spawnPos;
+            cat.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            cat.GetComponent<Rigidbody2D>().angularVelocity = 0f;
+            cat.transform.rotation = Quaternion.identity;
         }
     }
 
     public void endRound(GameObject losingCat) {
-        Cat winner = null;
+        Cat loser = null;
         for (int i = 0; i < catGameObjects.Count; i++) {
             if (catGameObjects[i] == losingCat) {
-                winner = cats[i];
+                loser = cats[i];
             }
         }
+        foreach (Cat cat in cats)
+        {
+            if (cat != loser) {
+                cat.points += 1;
+            }
+        }
+        uiManager.displayScore(cats);
         startRound();
     }
 }
