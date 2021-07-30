@@ -43,17 +43,17 @@ public class CatMovement : MonoBehaviour
         rb.AddForce(dir);
     }
 
-    void OnCollisionStay2D(Collision2D other) {
+    void OnCollisionEnter2D(Collision2D other) {
         // reset amount of jumps after touching platform
         if (other.gameObject.tag == "Platform") {
             jumps = maxJumps;
-        }     
+        }
     }
 
-    void OnCollisionExit2D(Collision2D other) {
-        // reset amount of jumps after touching platform
-        if (other.gameObject.tag == "Platform") {
-            jumps = 0;
-        }     
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Death") {
+            GameObject.FindGameObjectWithTag("GameManager")
+                .GetComponent<GameManager>().endRound(gameObject);
+        }
     }
 }
