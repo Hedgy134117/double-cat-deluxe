@@ -9,15 +9,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<Cat> cats;
     [SerializeField] List<GameObject> catGameObjects;
     [SerializeField] GameObject catPrefab;
-    CatSelectManager catSelectManager;
     [Header("Game")]
     [SerializeField] BoxCollider2D spawningArea;
     [SerializeField] UIManager uiManager;
 
     void Awake() {
-        catSelectManager = GameObject.FindGameObjectWithTag("CatSelectManager").GetComponent<CatSelectManager>();
+        GameObject catSelectManager = GameObject.FindGameObjectWithTag("CatSelectManager");
         if (catSelectManager != null) {
-            cats = catSelectManager.cats;
+            cats = catSelectManager.GetComponent<CatSelectManager>().cats;
         }
         else {
             for (int i = 0; i < catScriptableObjects.Count; i++) {
