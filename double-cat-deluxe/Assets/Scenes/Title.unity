@@ -979,7 +979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1685565732284951253, guid: 7947d0ebadac9864eb24259403cdce47, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Game
+      value: CatSelect
       objectReference: {fileID: 0}
     - target: {fileID: 3394049885425198167, guid: 7947d0ebadac9864eb24259403cdce47, type: 3}
       propertyPath: m_Name

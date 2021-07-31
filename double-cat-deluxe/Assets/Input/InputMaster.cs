@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/InputMaster.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Input/InputMaster.inputactions'
 
 using System;
 using System.Collections;
@@ -157,7 +157,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
             ]
         },
         {
-            ""name"": ""UHJKPlayer"",
+            ""name"": ""TFGHPlayer"",
             ""id"": ""c8f5934b-a52c-4c56-a9c0-a64ead30649c"",
             ""actions"": [
                 {
@@ -184,7 +184,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""95569177-455a-465d-a8ea-22d8574b6f2e"",
-                    ""path"": ""<Keyboard>/u"",
+                    ""path"": ""<Keyboard>/t"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -195,7 +195,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""5e15ddc7-a686-4730-a4ca-9b9e12d404c0"",
-                    ""path"": ""<Keyboard>/j"",
+                    ""path"": ""<Keyboard>/g"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -206,7 +206,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""4ed43445-0478-4c6a-975c-06349188665c"",
-                    ""path"": ""<Keyboard>/h"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -217,7 +217,78 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""b3e0e96e-b967-4468-a668-e7d84dc8768b"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
+        },
+        {
+            ""name"": ""IJKLPlayer"",
+            ""id"": ""f8983fdd-c2df-4d62-b9eb-308f4dd11638"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Button"",
+                    ""id"": ""31b1dc75-cabc-4d01-9815-f0ade261eb38"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""ARROWS"",
+                    ""id"": ""b8db8995-c50d-4f61-9488-33d6ba7ec60f"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9d74ea45-1e90-4e59-9863-2ec05b8e225c"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""40687b1f-5696-4c6e-b27a-e4600c8794a1"",
                     ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""4361738f-5d18-4c72-bc7d-fc62fb384be8"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2e41d048-0e56-4b14-97a4-c0eb7e09fb2c"",
+                    ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -248,9 +319,12 @@ public class @InputMaster : IInputActionCollection, IDisposable
         // ARROWSPlayer
         m_ARROWSPlayer = asset.FindActionMap("ARROWSPlayer", throwIfNotFound: true);
         m_ARROWSPlayer_Movement = m_ARROWSPlayer.FindAction("Movement", throwIfNotFound: true);
-        // UHJKPlayer
-        m_UHJKPlayer = asset.FindActionMap("UHJKPlayer", throwIfNotFound: true);
-        m_UHJKPlayer_Movement = m_UHJKPlayer.FindAction("Movement", throwIfNotFound: true);
+        // TFGHPlayer
+        m_TFGHPlayer = asset.FindActionMap("TFGHPlayer", throwIfNotFound: true);
+        m_TFGHPlayer_Movement = m_TFGHPlayer.FindAction("Movement", throwIfNotFound: true);
+        // IJKLPlayer
+        m_IJKLPlayer = asset.FindActionMap("IJKLPlayer", throwIfNotFound: true);
+        m_IJKLPlayer_Movement = m_IJKLPlayer.FindAction("Movement", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -363,29 +437,29 @@ public class @InputMaster : IInputActionCollection, IDisposable
     }
     public ARROWSPlayerActions @ARROWSPlayer => new ARROWSPlayerActions(this);
 
-    // UHJKPlayer
-    private readonly InputActionMap m_UHJKPlayer;
-    private IUHJKPlayerActions m_UHJKPlayerActionsCallbackInterface;
-    private readonly InputAction m_UHJKPlayer_Movement;
-    public struct UHJKPlayerActions
+    // TFGHPlayer
+    private readonly InputActionMap m_TFGHPlayer;
+    private ITFGHPlayerActions m_TFGHPlayerActionsCallbackInterface;
+    private readonly InputAction m_TFGHPlayer_Movement;
+    public struct TFGHPlayerActions
     {
         private @InputMaster m_Wrapper;
-        public UHJKPlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Movement => m_Wrapper.m_UHJKPlayer_Movement;
-        public InputActionMap Get() { return m_Wrapper.m_UHJKPlayer; }
+        public TFGHPlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_TFGHPlayer_Movement;
+        public InputActionMap Get() { return m_Wrapper.m_TFGHPlayer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UHJKPlayerActions set) { return set.Get(); }
-        public void SetCallbacks(IUHJKPlayerActions instance)
+        public static implicit operator InputActionMap(TFGHPlayerActions set) { return set.Get(); }
+        public void SetCallbacks(ITFGHPlayerActions instance)
         {
-            if (m_Wrapper.m_UHJKPlayerActionsCallbackInterface != null)
+            if (m_Wrapper.m_TFGHPlayerActionsCallbackInterface != null)
             {
-                @Movement.started -= m_Wrapper.m_UHJKPlayerActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_UHJKPlayerActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_UHJKPlayerActionsCallbackInterface.OnMovement;
+                @Movement.started -= m_Wrapper.m_TFGHPlayerActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_TFGHPlayerActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_TFGHPlayerActionsCallbackInterface.OnMovement;
             }
-            m_Wrapper.m_UHJKPlayerActionsCallbackInterface = instance;
+            m_Wrapper.m_TFGHPlayerActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Movement.started += instance.OnMovement;
@@ -394,7 +468,40 @@ public class @InputMaster : IInputActionCollection, IDisposable
             }
         }
     }
-    public UHJKPlayerActions @UHJKPlayer => new UHJKPlayerActions(this);
+    public TFGHPlayerActions @TFGHPlayer => new TFGHPlayerActions(this);
+
+    // IJKLPlayer
+    private readonly InputActionMap m_IJKLPlayer;
+    private IIJKLPlayerActions m_IJKLPlayerActionsCallbackInterface;
+    private readonly InputAction m_IJKLPlayer_Movement;
+    public struct IJKLPlayerActions
+    {
+        private @InputMaster m_Wrapper;
+        public IJKLPlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_IJKLPlayer_Movement;
+        public InputActionMap Get() { return m_Wrapper.m_IJKLPlayer; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(IJKLPlayerActions set) { return set.Get(); }
+        public void SetCallbacks(IIJKLPlayerActions instance)
+        {
+            if (m_Wrapper.m_IJKLPlayerActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_IJKLPlayerActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_IJKLPlayerActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_IJKLPlayerActionsCallbackInterface.OnMovement;
+            }
+            m_Wrapper.m_IJKLPlayerActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+            }
+        }
+    }
+    public IJKLPlayerActions @IJKLPlayer => new IJKLPlayerActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -412,7 +519,11 @@ public class @InputMaster : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
     }
-    public interface IUHJKPlayerActions
+    public interface ITFGHPlayerActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+    }
+    public interface IIJKLPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
     }

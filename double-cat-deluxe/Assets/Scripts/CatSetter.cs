@@ -6,7 +6,8 @@ public enum ControlScheme
 {
     WASD,
     ARROWS,
-    UHJK
+    TFGH,
+    IJKL
 }
 
 public class CatSetter : MonoBehaviour
@@ -42,8 +43,11 @@ public class CatSetter : MonoBehaviour
             case ControlScheme.ARROWS:
                 catMovement.controls.ARROWSPlayer.Movement.performed += ctx => catMovement.move(ctx.ReadValue<Vector2>());
                 break;
-            case ControlScheme.UHJK:
-                catMovement.controls.UHJKPlayer.Movement.performed += ctx => catMovement.move(ctx.ReadValue<Vector2>());
+            case ControlScheme.TFGH:
+                catMovement.controls.TFGHPlayer.Movement.performed += ctx => catMovement.move(ctx.ReadValue<Vector2>());
+                break;
+            case ControlScheme.IJKL:
+                catMovement.controls.IJKLPlayer.Movement.performed += ctx => catMovement.move(ctx.ReadValue<Vector2>());
                 break;
         }
     }
